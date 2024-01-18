@@ -25,6 +25,45 @@
             border-color: black;
        
         }
+
+        .round-box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background-color: pink;
+
+            /* 테두리를 둥글게 만들어주는 속성 */
+            /* 수치는 2-8px 정도가 무난하다. */
+            /* 너무 높게 주면 디자인이 과하게 귀여워질 수 있다. */
+            border-radius: 2px;
+        }
+
+        .one-side-round {
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            border-radius: 4px;
+            border-bottom-right-radius: 100px;
+            border: 1px solid green;
+
+            /* border-radius:4px; */
+
+            /* 4개 속성을 적을 때는 왼쪽 위부터 시계방향 적용 */
+            /* border-radius: 4px 4px 4px 4px; */
+
+            /* 2개 속성을 적을 때는 속성이 번갈아 들어간다. */
+            /* border-radius: 4px 24px; */
+            /* border-radius: 4px 24px 4px 24px; */
+
+            /* border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px; */
+
+
+            margin: 24px;
+        }
+
     </style>
 </head>
 
@@ -33,6 +72,10 @@
     <div class="box"></div> 
 
     <!-- div.box = div class -->
+
+    <div class="round-box"></div>
+
+    <div class="one-side-round"></div>
 
 </body>
 </html>

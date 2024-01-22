@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+        
+        /* float보다 더 발전된 형태의 배치 속성 */
+        /* 자식 요소들을 일렬로 정렬해주는 속성 */
+        /* 강력한 부가기능들이 많기 때문에 익숙해지면 정말 편하다 */
+        .container {
+            display: flex;
+            padding: 12px;
+            background-color: pink;
+
+            margin-bottom: 8px;
+        }
+
+        .red {
+            background-color: red;
+        }
+        .green {
+            background-color: green;
+        }
+
+        .test {
+            height: 500px;
+
+            /* 흐름 방향 정렬 */
+            justify-content: ;
+            /* flex-start : 왼쪽, 위쪽 */
+            /* center : 중앙 */
+            /* flex-end : 오른쪽, 아래쪽 */
+            /* space-between : 첫 번째와 마지막 개체를 양 끝에 붙이고 나머지를 동일한 여백으로 배치 */
+
+
+            /* 여긴 잘 몰라도 돼 */
+            /* space-around : 모든 개체 양쪽에 여백을 동일하게 나눠주는 방식 */
+
+            /* space-evenly : 모든 여백을 동일한 크기로 설정*/
+
+
+            /* 흐름 수직 방향 정렬 */
+            align-items: ;
+            /* flex-start (기본값) */
+            /* center */
+            /* flex-end */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red box"></div>
+        <div class="green box"></div>
+    </div>
+
+    <div class="container test">
+        <div class="red box"></div>
+        <div class="green box"></div>
+    </div>
+
+    <!-- div.container -> div.red.box + div.green.box -->
+</body>
+</html>

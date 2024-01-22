@@ -10,26 +10,55 @@
             padding: 0;
         }
 
-        .pink-box {
+        .box { 
             width: 200px;
             height: 200px;
+        }
+
+        .pink-box {
             background-color: pink;
             float: left;
         }
 
         .red-box {
-            width: 200px;
-            height: 200px;
-            background-color: red;
+           background-color: red;
             float: left;
         }
         
-        /
+        /* float는 박스를 가로로 배치하기 위해 사용한 */
+        /* 이전 세대의 정렬 속성이다. */
+        /* float (부유하다) 라는 이름을 가지고 있는 만큼 */
+        /* 컨텐츠들이 둥둥 떠다녀 웹 구조를 잡을 때 의도하지 않은대로 작동할 때가 많다. */
+        /* 몇년 전 까지는 브라우저의 호환성 때문에 float도 숙련될 것을 권장했지만 */
+        /* 2024년에 float는 숙련될 대상은 아니다. */
+        /* 옛날에 이런걸 썼구나 정도로만 알고계셔요.. (굳이 열심히X) */
+        
+        /* float : 그 자리에 빈자리가 있으면 내가 가서 붙겠다. */
+        /* 근데 넘치면 아래로 밀림 */
+
+        .blue-box {
+           background-color: blue;
+
+            clear: both;
+            float: right;
+        }
+
+        .green-box {
+            background-color: green;
+            float: right;
+        }
+
+        /* clear 속성을 사용하면 이전 태그들의 float와 겹치는 것을 방지할 수 있다. */
+        /* float : right 속성은 태그를 오른쪽으로 정렬하지만 순서가 반대로 바뀌게 된다. */
+        
         </style>
 </head>
 <body>
-    <div class="pink-box"></div>
-    <div class="red-box"></div>
+    <div class="pink-box box"></div>
+    <div class="red-box box"></div>
+    
+    <div class="blue-box box"></div>
+    <div class="green-box box"></div>
 
     <!-- div.pink-box
          div.red-box

@@ -39,6 +39,7 @@
             display: flex;
             gap: 12px;
             width: 1200px;
+            background-color: black;
         }
 
         /* flex는 자식요소들의 크기를 유연하게 설정 */
@@ -46,16 +47,48 @@
         /* 비율에 맞게 자동으로 줄여준다. */
 
         .float-box {
+            background-color: black;
             width: 1200px;
-            padding: 100px;
+            overflow: hidden;
         }
 
         .float-5div {
-            margin right: 8px;
             width: 230.41px;
-            float: left;
+            height: 100px;
+            background-color: green;
+            margin-right: 12px;
 
-            background-color: blue;
+            float: left;
+        }
+
+        .flex-box-wrap {
+            /* width: 1216px; */
+            display: flex;
+
+            gap: 8px;
+
+            /* 넘치는 컨텐츠 줄이는 대신에 줄바꿈하기 */
+            flex-wrap: wrap;
+        }
+
+        .product {
+
+            /* 이렇게 고정값으로 작성하게 되면 */
+            /* 부모 컨텐츠 크기가 달라졌을때 망가지기 쉽다 */
+            /* width: 400px; */
+
+            /* 계산식을 안다면 다음과 같이 쓰는게 좋다 */
+            /* 포스트잇 (선생님 깃허브 참고-root) */
+            width: calc((100% - (8px * 2)) / 3);
+
+
+            height: 100px;
+            background-color: pink;
+
+            /* 텍스트정렬한것임 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
@@ -81,6 +114,15 @@
         <div class="float-5div"></div>
         <div class="float-5div"></div>
     </div>
+    </div>
+
+    <div class="flex-box-wrap">
+        <div class="product">1</div>
+        <div class="product">2</div>
+        <div class="product">3</div>
+        <div class="product">4</div>
+        <div class="product">5</div>
+        <div class="product">6</div>
     </div>
     
 </body>

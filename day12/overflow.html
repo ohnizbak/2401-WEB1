@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 책 8-5 예제 */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+            padding: 10px;
+        }
+
+        .content {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+
+        .hieght-auto {
+            height: auto;
+
+            /* overflow <- 역할 없음 왜냐? height가 설정이 안되어있어서 글자의 양에 따라 칸이 늘어나는건 당연한것임! */
+            /* 글자랑 사진이랑 겹칠때 가끔 사용행 !  자세한건 깃허브 선생님꺼 */
+        }
+
+        .overhidden {
+            overflow: hidden;
+
+            /* overflow가 제대로 작동하고 있는 곳 */
+            /* 텍스트는 웬만하면 hidden을 잘 적용시켜주자~ */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h4>콘텐츠 양이 일정</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Minus rem impedit atque similique quam sit, nulla, id, officia quae non debitis officiis corporis quis distinctio. 
+                Facilis repudiandae labore unde totam?
+            </p>
+        </div>
+        
+        <div class="content">
+            <h4>콘텐츠의 양이 많거나 유동적일 때 흘러넘침</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quasi aliquid alias perferendis corrupti quidem laborum, velit reprehenderit nemo ipsum ex ea quam, non vel blanditiis quod inventore et explicabo cupiditate.
+            </p>
+        </div>
+    
+        <div class="content hieght-auto">
+            <h4>콘텐츠의 양에 따라서 높이가 늘어남</h4>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Iusto sint dolore aliquid odio, voluptatem consectetur dignissimos natus ad quaerat magni placeat quod porro ut voluptatum architecto odit ea ratione dicta.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur vero culpa quis iure omnis laudantium dignissimos expedita dolore obcaecati quos?
+            Voluptate autem maxime sit. Dolorem quidem earum voluptate amet dolorum.
+            </p>
+        </div>
+    
+        <div class="content overhidden">
+            <h4>박스의 지정된 높이만큼만 콘텐츠가 보임</h4>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Illo, molestias exercitationem adipisci non commodi distinctio illum nostrum quos aut voluptatibus 
+            fugit debitis eligendi unde pariatur voluptas facere cupiditate itaque corrupti?
+            </p>
+        </div>
+    </div>
+</body>
+</html>

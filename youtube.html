@@ -11,7 +11,7 @@
         }
 
         .container-high {
-            width: 100%;
+            width: 1920px;
             height: 110px;
             padding: 30px;
             display: flex;
@@ -23,8 +23,6 @@
             display: flex;
             justify-self: center;
             gap: 30px;
-
-            background-color: lightgray;
         }
 
         .menu {
@@ -51,7 +49,6 @@
         
         .search-box {
             width: 700px;
-            background-color: pink;
             display: flex;
         }
         .search-bar {
@@ -86,6 +83,29 @@
             align-items: center;
             margin-left: 15px;
         }
+
+        .inform-box {
+            width: 180px;
+            display: flex;
+            justify-content: end;
+            padding-right: 30px;
+            gap: 15px;
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button {
+            background-color: white;
+            border: none;
+        }
+
         
     </style>
 </head>
@@ -108,9 +128,22 @@
                 <button class="glass">
                  <img src="img/search.png" alt="검색버튼">
                 </button>
-            <div class="mic">
+            <button class="mic">
                 <img src="img/mic.png" alt="음성검색">
-            </div>
+            </button>
+        </div>
+        <!-- ㅠㅠ검색창완성 -->
+
+        <div class="inform-box">
+            <button class="icon button">
+                <img src="img/addition-button.png" alt="영상 올리기">
+            </button>
+            <button class="icon button">
+                <img src="img/notification-bell.png" alt="알림">
+            </button>
+            <button class="icon button">
+                <img src="img/profile.png" alt="프로필">
+            </button>
         </div>
 
 

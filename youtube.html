@@ -14,6 +14,8 @@
             width: 100%;
             height: 110px;
             padding: 30px;
+            display: flex;
+            justify-content: space-between;
         }
 
         .box {
@@ -48,14 +50,16 @@
         }
         
         .search-box {
-            width: 100px;
+            width: 700px;
             background-color: pink;
+            display: flex;
         }
         .search-bar {
-            width: 600px;
+            width: 535px;
             height: 40px;
             border: 2px solid #222;
-            border-radius: 30px;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
 
             font-size: 20px;
             text-align: left;
@@ -68,8 +72,6 @@
             height: 40px;
             border-top-right-radius: 30px;
             border-bottom-right-radius: 30px;
-            display: flex;
-            justify-content: center;
             
         }
 
@@ -82,6 +84,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-left: 15px;
         }
         
     </style>
@@ -101,15 +104,15 @@
         <!-- ㅠㅠ -->
 
         <div class="search-box">
-            <div class="search-bar"> 검색
+            <div class="search-bar"> 검색</div>
                 <button class="glass">
-                    <img src="img/search.png" alt="검색버튼">
-                </div>
-            </div>
+                 <img src="img/search.png" alt="검색버튼">
+                </button>
             <div class="mic">
                 <img src="img/mic.png" alt="음성검색">
             </div>
         </div>
+
 
     </div>
 </body>

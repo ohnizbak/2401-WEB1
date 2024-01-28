@@ -10,81 +10,107 @@
             padding: 0;
         }
 
-        .container-sublist {
-            width: 330px;
-            height: auto;
-            background-color: black;/
+        .container-high {
+            width: 100%;
+            height: 110px;
+            padding: 30px;
         }
 
-        .logo-box {
+        .box {
+            width: 206px;
             display: flex;
+            justify-self: center;
+            gap: 30px;
+
+            background-color: lightgray;
         }
 
         .menu {
-            width: 60px;
-            height: 60px;
-            background-color: lightgray;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
 
-            margin: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .logo {
-            width: 180px;
-            height: 60px;
-            background-color: lightgray;
-            margin-top: 30px;
+            width: 126px;
+            height: 40px;
             
-            font-size: 36px;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        .mainmenu {
-            width: 330;
-            height: 240;
             display: flex;
-            gap: 30;
+            justify-content: center;
+            gap: 4px;
+
+            font-size: 22px;
+            font-weight: bold;
+        }
+        
+        .search-box {
+            width: 100px;
+            background-color: pink;
+        }
+        .search-bar {
+            width: 600px;
+            height: 40px;
+            border: 2px solid #222;
+            border-radius: 30px;
+
+            font-size: 20px;
+            text-align: left;
+            padding: 5px;
+            box-sizing: border-box;
         }
 
-        a {
-            text-decoration: none;
+        .glass {
+            width: 65px;
+            height: 40px;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            display: flex;
+            justify-content: center;
+            
         }
 
-        .menu-icon {
-            wid
+        .mic {
+            width: 40px;
+            height: 40px;
+            background-color: lightgray;
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+        
     </style>
 </head>
 <body>
-    <div class="container-sublist">
-        <div class="logo-box">
-            <div class="menu"></div>
-            <div class="logo">Youtube</div>
+    <div class="container-high">
+        
+        <div class="box">
+            <div class="menu">
+                <img src="img/menus.png" alt="메뉴아이콘">
+            </div>
+            <div class="logo">
+                <img src="img/youtube.png" alt="로고!">
+                <p>Premium</p>
+            </div>
+        </div>
+        <!-- ㅠㅠ -->
+
+        <div class="search-box">
+            <div class="search-bar"> 검색
+                <button class="glass">
+                    <img src="img/search.png" alt="검색버튼">
+                </div>
+            </div>
+            <div class="mic">
+                <img src="img/mic.png" alt="음성검색">
+            </div>
         </div>
 
-        <ul class="mainmenu">
-                <li class="mainmenu-list">
-                    <a href="#"></a>
-                    <div class="menu-icon"></div>
-                    <p class="menuname">홈</p>
-                </li>
-                <li class="mainmenu-list">
-                    <a href="#"></a>
-                    <div class="menu-icon"></div>
-                    <p class="menuname">Shorts</p>
-                </li>
-                <li class="mainmenu-list">
-                    <a href="#"></a>
-                    <div class="menu-icon"></div>
-                    <p class="menuname">구독</p>
-                </li>
-                <li class="mainmenu-list">
-                    <a href="#"></a>
-                    <div class="menu-icon"></div>
-                    <p class="menuname">Music</p>
-                </li>
-            </ul>
-        </div>
-    
+    </div>
 </body>
 </html>

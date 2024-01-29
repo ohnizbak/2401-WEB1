@@ -3,136 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>네이버 메인페이지 만들기</title>
+
     <style>
         * {
             margin: 0;
             padding: 0;
         }
 
-        .container {
-            width: 1000px;
-
+        .header {
+            width: 1280px;
+            height: 267px;
+            margin-left: 311px;
+            background-color: lightcoral;
+            padding: 10px;
+            box-sizing: border-box;
         }
 
-        .searchbar {
-            width: 100%;
-            height: 60px;
-            background-color: lightgray;
-
-            border-radius: 50px;
-
-            margin-bottom: 16px;
-
-        }
-
-        .menu-container {
+        .container-menu {
+            height: 50px;
             display: flex;
-            gap: 16px;
-            justify-content: center;
+            justify-content: space-between;
         }
 
-        .menu-list {
-            text-decoration: none;
-            flex-direction: column;
-            list-style: none;
+        .menu-left {
+            display: flex;
+            justify-content: start;
+            gap: 5px;
         }
 
-        a {
-            text-decoration: none;
+        .menu-right {
+            display: flex;
+            justify-content: end;
+            gap: 5px;
         }
 
-        .menu-icon {
-            width: 60px;
-            height: 60px;
-            background-color: lightgray;
-            border-radius: 20px;
-        }
-
-        .menu-text {
-            text-decoration: none;
-            color: #222;
-            font-weight: bold;
-            font-size: 20px;
+        .icon {
+            width: 40px;
+            height: 40px;
+            margin: auto;
             text-align: center;
-            
         }
+
     </style>
 </head>
 <body>
-    <div class="container">
-       
-        <div class="searchbar"></div>
+    <div class="header">
+        
+        <div class="container-menu">
+            <div class="menu-left">
+                <div class="icon">
+                    <img src="nimg/menu.png" alt="메뉴">
+                </div>
+                <div class="icon">
+                    <img src="nimg/pay.png" alt="페이">
+                </div>
+            </div>
 
-        <ul class="menu-container">
-            <li class="menu-list">
-                <a href="#">
-                    <div class="menu-icon"></div>
-                    <p class="menu-text">메뉴</p>
-                </a>
-            </li>
-            <li class="menu-list">
-                <a href="#">
-                    <div class="menu-icon"></div>
-                    <p class="menu-text">메뉴</p>
-                </a>
-            </li>
-            <li class="menu-list">
-                <a href="#">
-                    <div class="menu-icon"></div>
-                    <p class="menu-text">메뉴</p>
-                </a>
-            </li>
-            <li class="menu-list">
-                <a href="#">
-                    <div class="menu-icon"></div>
-                    <p class="menu-text">메뉴</p>
-                </a>
-            </li>
-            <li class="menu-list">
-                <a href="#">
-                    <div class="menu-icon"></div>
-                    <p class="menu-text">메뉴</p>
-                </a>
-            </li>
-            <li class="menu-list">
-                <a href="#">
-                    <div class="menu-icon"></div>
-                    <p class="menu-text">메뉴</p>
-                </a>
-            </li>
-            <li class="menu-list">
-                <a href="#">
-                    <div class="menu-icon"></div>
-                    <p class="menu-text">메뉴</p>
-                </a>
-            </li>
-            <li class="menu-list">
-                <a href="#">
-                    <div class="menu-icon"></div>
-                    <p class="menu-text">메뉴</p>
-                </a>
-            </li>
-            <li class="menu-list">
-                <a href="#">
-                    <div class="menu-icon"></div>
-                    <p class="menu-text">메뉴</p>
-                </a>
-            </li>
-            <li class="menu-list">
-                <a href="#">
-                    <div class="menu-icon"></div>
-                    <p class="menu-text">메뉴</p>
-                </a>
-            </li>
-            <li class="menu-list">
-                <a href="#">
-                    <div class="menu-icon"></div>
-                    <p class="menu-text">메뉴</p>
-                </a>
-            </li>
-        </ul>
-
+            <div class="menu-right">
+                <div class="icon">
+                    <img src="nimg/talk.png" alt="말풍선">
+                </div>
+                <div class="icon">
+                    <img src="nimg/bell.png" alt="알람종">
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

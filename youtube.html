@@ -12,8 +12,8 @@
 
         .container-high {
             width: 1920px;
-            height: 110px;
-            padding: 30px;
+            height: 40px;
+            padding: 15px;
             display: flex;
             justify-content: space-between;
         }
@@ -106,7 +106,50 @@
             border: none;
         }
 
-        
+        .container-bottom {
+            display: flex;
+        }
+        .container-left {
+            width: 100px;
+            height: 1080px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu-box {
+             
+        }
+
+        .menu-left {
+            list-style: none;
+            padding: 20px;
+        }
+
+        .menu-list {
+            width: 80px;
+            height: 90px;
+            
+            border-radius: 15px;
+        }
+
+        .menu-name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 5px;
+        }
+
+        .overflow {
+            overflow: hidden;
+        }
+
+        .container-right {
+            width: 1820px;
+            height: auto;
+            padding: 15px;
+        }
+
     </style>
 </head>
 <body>
@@ -145,8 +188,66 @@
                 <img src="img/profile.png" alt="프로필">
             </button>
         </div>
-
-
+        <!-- 이거 왜 넘치지?  -->
     </div>
+    
+
+    <div class="container-bottom">
+
+    <!-- 왼쪽 박스 -->
+    <div class="container-left">
+
+        <ul class="menu-box">
+            <li class="menu-left">
+                <button class="menu-list button">
+                    <div class="menu-icon">
+                        <img src="img/home.png" alt="홈">
+                    </div>
+                    <span class="menu-name">홈</span>
+                </button>
+            </li>
+            <li class="menu-left">
+                <button class="menu-list button">
+                    <div class="menu-icon">
+                        <img src="img/video.png" alt="dd">
+                    </div>
+                    <span class="menu-name">Shorts</span>
+                </button>
+            </li><li class="menu-left">
+                <button class="menu-list button">
+                    <div class="menu-icon">
+                        <img src="img/subscribe.png" alt="sub">
+                    </div>
+                    <span class="menu-name">구독</span>
+                </button>
+            </li><li class="menu-left">
+                <button class="menu-list button">
+                    <div class="menu-icon">
+                        <img src="img/music.png" alt="music">
+                    </div>
+                    <span class="menu-name overflow">Youtube Music</span>
+                </button>
+            </li><li class="menu-left">
+                <button class="menu-list button">
+                    <div class="menu-icon">
+                        <img src="img/me.png" alt="me">
+                    </div>
+                    <span class="menu-name">나</span>
+                </button>
+            </li><li class="menu-left">
+                <button class="menu-list button">
+                    <div class="menu-icon">
+                        <img src="img/download.png" alt="down">
+                    </div>
+                    <span class="menu-name overflow">오프라인 저장목록</span>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <!-- 하...  -->
+
+  
+
+</div>
 </body>
 </html>

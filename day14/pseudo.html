@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ 
+            margin: 0;
+            padding: 0;
+        }
+
+        .link-and-arrow {
+            text-decoration: none;
+            color: #222;
+        }
+
+        .link-and-arrow:hover {
+            text-decoration: underline;
+        }
+
+        .link-and-arrow::after {
+            /* 가상요소 선택자에서 이 속성은 반드시 필요 : content */
+            content: ' ';
+
+            display: inline-block;
+
+            width: 6px;
+            height: 6px;
+            border: 1px solid #222;
+            margin: 2px;
+
+            transform: rotate(-45deg);
+            border-top: none;
+            border-left: none;
+        }
+    </style>
+</head>
+<body>
+    <a class="link-and-arrow" href="#">Buy now</a>
+</body>
+</html>
